@@ -22,7 +22,7 @@ class Livre(titre: String, anneePublication: Int, var auteur: String, var nbPage
 
     override fun afficherInfos(){
         println("Les infos du livre sont: " +
-                "$titre" + "$anneePublication" + "$auteur" + "$nbPages" + "$genre")
+                "$titre, " + "$anneePublication, " + "$auteur, " + "$nbPages, " + "$genre")
     }
 
     var estEmprunte: Boolean = false
@@ -35,6 +35,8 @@ class Livre(titre: String, anneePublication: Int, var auteur: String, var nbPage
         estEmprunte = false
         println("$titre a été rendu")
     }
+
+    companion object
 
 
 }

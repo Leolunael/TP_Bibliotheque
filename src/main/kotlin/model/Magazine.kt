@@ -7,6 +7,6 @@ class Magazine(titre: String, anneePublication: Int, var numero: Int): Document(
 
     override fun afficherInfos(){
         println("Les infos du magazine sont: " +
-                "$titre" + "$anneePublication" + "$numero")
+                "$titre, " + "$anneePublication, " + "$numero")
     }
 }
