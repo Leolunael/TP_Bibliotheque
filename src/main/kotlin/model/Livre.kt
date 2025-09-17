@@ -25,12 +25,16 @@ class Livre(titre: String, anneePublication: Int, var auteur: String, var nbPage
                 "$titre" + "$anneePublication" + "$auteur" + "$nbPages" + "$genre")
     }
 
+    var estEmprunte: Boolean = false
+
     fun emprunter(){
-        if(estEmprunte) {
-            println("Livre libre")
-        }else{
-            estEmprunte = true
-            println("Livre emprunté")
-        }
+        estEmprunte = true
+        println("$titre a été emprunté")
+    }
+    fun rendre(){
+        estEmprunte = false
+        println("$titre a été rendu")
+    }
+
 
 }
