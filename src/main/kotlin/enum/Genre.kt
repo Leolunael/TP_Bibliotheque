@@ -6,6 +6,7 @@ enum class Genre {
     FANTASTIQUE,
     FANTASY,
     FEEL_GOOD,
-    CONTEMPORAIN
+    CONTEMPORAIN,
+    CLASSIQUE
 
 }
